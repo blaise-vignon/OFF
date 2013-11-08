@@ -327,9 +327,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BarcodeScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BarCodeScanner\obj\Debug\BarcodeScanner.dll</HintPath>
+    <Reference Include="BarcodeScanner">
+      <HintPath>..\BarCodeScanner\obj\Release\BarcodeScanner.dll</HintPath>
     </Reference>
     <Reference Include="zxing.wp8.0">
       <HintPath>..\BarCodeScanner\zxing.wp8.0.dll</HintPath>
