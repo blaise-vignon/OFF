@@ -32,7 +32,8 @@
 			var messageStore = this;
 
 			messageStore.locale = locale;
-			messageStore.log( 'initializing for ' + locale );
+			messageStore.log('initializing for ' + locale);
+			//alert('initializing for ' + locale);
 
 			$( 'link' ).each( function ( index, element ) {
 				var $link = $( element ),
@@ -124,6 +125,7 @@
 			if ( window.console && $.i18n.debug ) {
 				window.console.log.apply( window.console, arguments );
 			}
+			//alert(arguments[0]);
 		},
 
 		/**
@@ -222,6 +224,7 @@
 			return $.ajax( {
 				url: url,
 				dataType: 'json',
+                isLocal: true,
 				async: false
 			// This is unfortunate.
 			} ).fail( function ( jqxhr, settings, exception ) {

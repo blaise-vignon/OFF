@@ -168,6 +168,7 @@
     <Content Include="www\cordova-2.5.0.js" />
     <Content Include="www\cordova.js" />
     <Content Include="www\css\index.css" />
+    <Content Include="www\modernizr.js" />
     <Content Include="zxing.wp8.0.dll" />
     <None Include="www\ios_inspired\images\iconSprite.psd" />
     <None Include="www\ios_inspired\README.md" />
@@ -250,12 +251,24 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
-    <None Include="www\i18n-ar.json" />
-    <None Include="www\i18n-de.json" />
-    <None Include="www\i18n-en.json" />
-    <None Include="www\i18n-es.json" />
-    <None Include="www\i18n-fr.json" />
-    <None Include="www\i18n-it.json" />
+    <None Include="www\i18n-ar.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="www\i18n-de.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="www\i18n-en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="www\i18n-es.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="www\i18n-fr.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="www\i18n-it.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">

@@ -25,6 +25,7 @@
 <script src="jquery.i18n.parser.js"></script>
 <script src="jquery.i18n.emitter.js"></script>
 <script src="jquery.i18n.language.js"></script>
+<!--<script src="modernizr.js"></script>-->
 
 <!-- i18n -->
 <link rel="localization" hreflang="en" href="i18n-en.json" type="application/l10n+json"/>
@@ -33,6 +34,7 @@
 <link rel="localization" hreflang="it" href="i18n-it.json" type="application/l10n+json"/>
 <link rel="localization" hreflang="de" href="i18n-de.json" type="application/l10n+json"/>
 <link rel="localization" hreflang="ar" href="i18n-ar.json" type="application/l10n+json"/>
+
 
 
 <script type="text/javascript" charset="utf-8">
@@ -59,16 +61,15 @@ var code;
 var uploads_in_progress = 0;
 
 function update_language() {
-
+    //alert("coucou " + lc );
 	$('#language').val(lc);
-
+	
 	$("form").each(function () {
 		var action = $(this).attr("action");
 		if (action) {
 			$(this).attr("action", action.replace(/\/(..)\.openfoodfacts\.org/, '/' + lc + '.openfoodfacts.org'));
 		}
 		});
-		
 	$(".i18n").i18n();
 	
 	show_login();
@@ -104,10 +105,16 @@ jQuery( document ).ready( function ( $ ) {
 	else {
 		lc = 'en';
 	}
-	
+    //alert(window.localStorage.getItem("username"));
+	//window.localStorage.setItem("lc", lc)
+	//alert("lang " + lc );
+	i18n.locale = lc;
+
+
 	if (window.localStorage.getItem("lc")) {
 		lc = window.localStorage.getItem("lc");
 		i18n.locale = lc;
+		//alert("lang2 " + lc);
 	}
 	
 	update_language();
@@ -211,6 +218,7 @@ function show_login () {
 	var user_id = window.localStorage.getItem("user_id");
 	var password = window.localStorage.getItem("password");
 	var name = window.localStorage.getItem("name");
+	//alert("login " + user_id + " " + " " + password + " " + name);
 	
 	if ((user_id != null) && (password != null)) {
 		$("#login_form").hide();
@@ -229,10 +237,10 @@ function show_login () {
 	}
 }			
 
-    function init() {
-        console.log("GOT AN ONLOAD!!!")
+function init() {
+    console.log("GOT AN ONLOAD!!!");
+    //alert("GOT AN ONLOAD!!!");
         //document.addEventListener("touchmove", preventBehavior, false);
-        
         document.addEventListener("deviceready", onDeviceReady, false);
                 
 $('#search').submit(function() { // catch the form's submit event

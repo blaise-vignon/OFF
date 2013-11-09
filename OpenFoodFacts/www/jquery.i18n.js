@@ -77,7 +77,9 @@
 						}
 
 						var message = i18n.messageStore.get( _locale, value );
-						
+						//if (this == "msg_login") {
+						//    alert(this + " message: " + message + " locale " + _locale + " value " + value);
+						//}
 						if ( message ) {
 							return message;
 						}
