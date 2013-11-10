@@ -207,8 +207,12 @@
     <Content Include="www\jquery.mobile-1.2.0.min.js" />
     <Content Include="www\jquery.retina.js" />
     <Content Include="www\js\index.js" />
-    <Resource Include="www\loading.gif" />
-    <Resource Include="www\loading2.gif" />
+    <Content Include="www\loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\loading2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="www\master.css" />
     <Content Include="www\off.css" />
     <Content Include="www\openfoodfacts-logo-ar%402x.png" />
