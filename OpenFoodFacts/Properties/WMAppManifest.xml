@@ -3,12 +3,6 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="en-US" />
-    <Language code="ar" />
-    <Language code="en" />
-    <Language code="fr" />
-    <Language code="de" />
-    <Language code="it" />
-    <Language code="es" />
   </Languages>
   <App xmlns="" ProductID="{c155f5da-8d82-4022-ad68-cfe26da05ce3}" Title="OpenFoodFacts" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="OpenFoodFacts author" BitsPerPixel="32" Description="Apache Cordova for Windows Phone" Publisher="OpenFoodFacts" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>

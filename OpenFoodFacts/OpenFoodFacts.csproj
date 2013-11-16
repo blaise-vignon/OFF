@@ -36,10 +36,11 @@
     </TargetFrameworkProfile>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>ar%3ben%3bfr%3bde%3bit%3bes</SupportedCultures>
+    <SupportedCultures>
+    </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>CordovaAppProj_$(Configuration)_$(Platform).xap</XapFilename>
+    <XapFilename>OpenFoodFacts_Release_AnyCPU.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>OpenFoodFacts.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
